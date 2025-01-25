@@ -13,7 +13,42 @@
             <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
         </p>
         <p>
-            
+            <!-- Tipo de input no form Numérico
+                type:
+                number - só aceita números
+                atributos:
+                    min - mínimo;
+                    max - máximo;
+                    step - de quanto em quanto vai mudando. ex: 0.5;
+                    value - Valor que já virá preenchido;
+            -->
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required>
+        </p>
+        <p>
+            <!-- Tipo de input no form Data - Mês e Ano
+                type:
+                    month - já trás o mês e o ano.
+                    value - posso colocar o ano e o mês 
+            -->
+            <label for="imes">Perído Letivo</label>
+            <input type="month" name="mes" id="imes" value="2025-01">
+        </p>
+        <p>
+            <!-- Tipo de input no form Data - Dia, Mês e Ano
+                type:
+                    date - formata e critica o dia/mês/ano
+            -->
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia" value="2020-07-14">
+        </p>
+        <p>
+            <!-- Tipo de input no form HORA
+                 type:
+                    time - Já faz as críticas em relação a HORA
+            -->
+            <label for="ihora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora">
         </p>
         <p>
             <input type="submit" value="Enviar">
